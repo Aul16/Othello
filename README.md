@@ -1,5 +1,7 @@
 # Othello
 
+Projet fait durant les Coding Week à CentraleSupelec.
+
 ## Principe du jeu
 
 ### Règles
@@ -54,7 +56,17 @@ De plus, il faut changer l'ip par défaut dans la class Network pour qu'il se co
 Pour jouer depuis un réseau externe, il faut ouvrir le port 5555 sur sa box pour le rediriger vers la machine.
 
 
-## MVP
+## Images du jeu
 
-Le MVP se trouve dans un commit taggé. Le readme de celui-ci explique comment le lancer.
+### Menu
+
+![image](https://github.com/Aul16/Othello/assets/39156836/c1aa1064-80ac-4def-8844-264e07aaa27a)
+
+### Partie à 2
+
+![image](https://github.com/Aul16/Othello/assets/39156836/683ebd3f-feaa-4d71-9340-2ec7f2dfc16f)
+
+### Partie à 3
+
+![image](https://github.com/Aul16/Othello/assets/39156836/d847c1b7-7a09-4c6f-897f-b3f0c4530ccb)
 
