@@ -1,5 +1,6 @@
 import random as rd
 import time
+from typing import List
 
 
 class Game:
@@ -21,7 +22,7 @@ class Game:
         self.start_time = time.time()
         self.memo_minmax = {}
 
-    def create_board(self) -> [[int]]:
+    def create_board(self) -> List[List[int]]:
         """
         2 players grid : 8x8
         3 players grid : 9x9
@@ -73,7 +74,7 @@ class Game:
 
         return board
 
-    def count_player_points(self, grid: [[int]]) -> [int]:
+    def count_player_points(self, grid: List[List[int]]) -> List[int]:
         """
         Input : Game grid
         Return a list with the scores (sum of pieces on the board) of the players
@@ -364,7 +365,7 @@ class Game:
 
             self.start_time = time.time()
 
-    def is_grid_full(self, grid: [[int]]) -> bool:
+    def is_grid_full(self, grid: List[List[int]]) -> bool:
         """
         Input : Game Grid
         Return True if no one can play, else False
@@ -377,7 +378,7 @@ class Game:
                 return False
         return True
 
-    def minmax(self, grid: [[int]], player: int, coup_avance: int):
+    def minmax(self, grid: List[List[int]], player: int, coup_avance: int):
         """
         Input : Game Grid, the CPU player and the depth
         Minmax algorithm : choose the best move minimizing CPU's gain with the utility function, and a variable depth
@@ -397,7 +398,7 @@ class Game:
         ):
             ending = True
 
-        def utility(grid: [[int]], player: int) -> tuple:
+        def utility(grid: List[List[int]], player: int) -> tuple:
             """
             Utility function of the Minmax Algorithm
             Returns the score quality of the move
@@ -505,7 +506,7 @@ class Game:
 
         def play_move_CPU(
             grid, player: int, coup: tuple, moves_possible: dict
-        ) -> [[int]]:
+        ) -> List[List[int]]:
             """
             Update the grid with the CPU move
             """
