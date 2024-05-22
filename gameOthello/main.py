@@ -2,20 +2,17 @@ import os
 
 PATH = os.path.dirname(os.path.abspath(__file__))  # Get the path of the main.py file
 
-# Install all packages
-if "\\" in PATH:
-    os.system(f"pip install -r {PATH}\\requirements.txt")  # Windows case
-else:
-    os.system(f"pip install -r {PATH}/requirements.txt")  # Other cases
-
 # Verify that all packages are installed
 try:
     import PIL
 except ImportError:
-    print(
-        "Please verify that pip command is working or install manually the package PIL (pillow)"
-    )
-    exit()
+    if input("Do you want to install libraries ? (y/n) : ") == "y":
+        os.system(f"pip install -r {PATH}/requirements.txt")
+    else:
+        print(
+        "Please install the required libraries by running the following command : \n pip install -r requirements.txt"
+        )
+        exit()
 
 # Import game window
 from graphicalOthello import game_window

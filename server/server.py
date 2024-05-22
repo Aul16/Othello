@@ -62,7 +62,6 @@ while True:
     print("Connected to:", addr)
 
     gameId = conn.recv(2048).decode()  # Receive gameId
-    print(type(gameId))
     conn.send(
         pickle.dumps("Ok", pickle.HIGHEST_PROTOCOL)
     )  # Send ok to client to confirm
