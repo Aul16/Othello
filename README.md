@@ -60,13 +60,13 @@ Pour jouer depuis un réseau externe, il faut ouvrir le port 5555 sur sa box pou
 
 ### Menu
 
-![image](https://github.com/Aul16/Othello/assets/39156836/c1aa1064-80ac-4def-8844-264e07aaa27a)
+![image](https://github.com/Aul16/Othello/assets/39156836/f0cd4598-9a01-4f02-8839-008355dfa7c7)
 
 ### Partie à 2
 
-![image](https://github.com/Aul16/Othello/assets/39156836/683ebd3f-feaa-4d71-9340-2ec7f2dfc16f)
+![image](https://github.com/Aul16/Othello/assets/39156836/6cf75cb4-57cd-481f-9c85-6c63b28829ec)
 
-### Partie à 3
+### Partie à 4
 
-![image](https://github.com/Aul16/Othello/assets/39156836/d847c1b7-7a09-4c6f-897f-b3f0c4530ccb)
+![image](https://github.com/Aul16/Othello/assets/39156836/50cff979-e97c-4b7d-9b05-c59c420df514)
 
